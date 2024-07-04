@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: transparent;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.toggle-dark-mode {
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-dark-mode p {
+  margin: 0;
+}
