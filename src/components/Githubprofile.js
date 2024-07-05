@@ -31,7 +31,7 @@ export const GithubProfile = ({ profile }) => {
           <div>
             <h2>{profile.name}</h2>
             <p className="username">
-              <a style={{textDecoration:"none"}} href={profile.html_url} target="_blank">
+              <a style={{textDecoration:"none"}} href={profile.html_url} target="_blank" rel="noreferrer">
                 @{profile.login}
               </a>
             </p>
