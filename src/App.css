@@ -1,25 +1,31 @@
 :root {
-  --bg-color: #f5f5f5;
+  --bg-color: #f5f8ff;
   --text-color: #333;
   --subtext-color: #555;
   --border-color: #ddd;
   --button-bg: #007bff;
   --button-text: #fff;
   --input-bg: #fff;
-  --profile-bg: #f0f0f0;
+  --profile-bg: #fff;
   --link-color: #0366d6;
+  --search-bar-boxshadowl:  0 0 10px rgba(212, 40, 40, 0.758);
+  --search-input-placeholder: #a39c9c;
 }
 
 body .dark-mode {
   --bg-color: #141b2e;
   --text-color: #f5f5f5;
-  --subtext-color: #aaa;
+  --subtext-color: #5189e8;
   --border-color: #444;
-  --button-bg: #0056b3;
+  --button-bg: #0e82f9;
   --button-text: #fff;
-  --input-bg: #333;
-  --profile-bg: #2c2c2c;
+  --input-bg: #1d2a4a;
+  --profile-bg: #1d2a4a;
   --link-color: #58a6ff;
+  --profile-stats-bg: #141b2e;
+  --profile-join-date: #f5f5f5;
+  --search-bar-boxshadow: rgba(0, 94, 255, 0.702);
+  --search-input-placeholder: #a39c9c;
 
 }
 
@@ -31,4 +37,7 @@ body .dark-mode {
   background-color: var(--bg-color);
   color: var(--text-color);
   min-height: 100vh;
+  min-width: 90vw;
+  overflow: hidden;
+
 }

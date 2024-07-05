@@ -1,11 +1,13 @@
 .header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   background-color: transparent;
   color: var(--text-color);
-  border-bottom: 1px solid var(--border-color);
+  width: 90%;
+  max-width: 640px;
 }
 
 .header h1 {
@@ -19,6 +21,7 @@
   font-size: 14px;
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .toggle-dark-mode p {

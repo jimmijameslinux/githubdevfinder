@@ -1,5 +1,6 @@
 .search-bar-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -7,15 +8,16 @@
 
 .search-bar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   margin: 20px 0;
   width: 90%;
-  max-width: 600px;
+  max-width: 640px;
   background-color: var(--input-bg);
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .search-bar input {
@@ -26,10 +28,17 @@
   flex: 1;
   background-color: transparent;
   color: var(--text-color);
+  outline: none;
+}
+
+/* search bar input focus make search bar container border white */
+.search-bar:has(input:focus){
+  /* light blue box shadow */
+  box-shadow: 0 0 10px var(--search-bar-boxshadow);
 }
 
 .search-bar input::placeholder {
-  color: var(--subtext-color);
+  color: var(--search-input-placeholder);
 }
 
 .search-bar button {
